@@ -1,0 +1,2 @@
+class MoodPost < ApplicationRecord
+end
