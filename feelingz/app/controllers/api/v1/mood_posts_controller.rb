@@ -18,7 +18,7 @@ class Api::V1::MoodPostsController < ApplicationController
     @mood_post = MoodPost.new(mood_post_params)
 
     if @mood_post.save
-      render json: @mood_post, status: :created, location: @mood_post
+      render json: @mood_post, status: :created
     else
       render json: @mood_post.errors, status: :unprocessable_entity
     end
