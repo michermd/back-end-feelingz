@@ -46,6 +46,6 @@ class Api::V1::MoodPostsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def mood_post_params
-      params.require(:mood_post).permit(:user_id, :img_url, :emotion, :activity, :mood, :journal)
+      params.require(:mood_post).permit(:user_id, :img_url, :emotion, :mood, :journal)
     end
 end

@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 2018_09_24_150335) do
     t.string "img_url"
     t.string "emotion"
     t.string "mood"
-    t.string "activity"
     t.string "journal"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
