@@ -5,6 +5,7 @@ class CreateMoodPosts < ActiveRecord::Migration[5.2]
       t.string :img_url
       t.string :emotion
       t.string :mood
+      t.string :activity
       t.string :journal
 
       t.timestamps

@@ -5,6 +5,7 @@ one:
   img_url: MyString
   emotion: MyString
   mood: MyString
+  activity: MyString
   journal: MyString
 
 two:
@@ -12,4 +13,5 @@ two:
   img_url: MyString
   emotion: MyString
   mood: MyString
+  activity: MyString
   journal: MyString

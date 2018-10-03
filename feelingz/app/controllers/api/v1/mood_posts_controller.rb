@@ -16,7 +16,7 @@ class Api::V1::MoodPostsController < ApplicationController
   # POST /mood_posts
   def create
     @mood_post = MoodPost.new(mood_post_params)
-
+    # byebug
     if @mood_post.save
       render json: @mood_post, status: :created
     else
@@ -46,6 +46,6 @@ class Api::V1::MoodPostsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def mood_post_params
-      params.require(:mood_post).permit(:user_id, :img_url, :emotion, :mood, :journal)
+      params.require(:mood_post).permit(:user_id, :img_url, :emotion, :mood, :activity, :journal)
     end
 end

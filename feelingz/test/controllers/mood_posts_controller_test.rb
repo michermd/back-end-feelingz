@@ -12,7 +12,7 @@ class MoodPostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create mood_post" do
     assert_difference('MoodPost.count') do
-      post mood_posts_url, params: { mood_post: { emotion: @mood_post.emotion, img_url: @mood_post.img_url, journal: @mood_post.journal, mood: @mood_post.mood, user_id: @mood_post.user_id } }, as: :json
+      post mood_posts_url, params: { mood_post: { activity: @mood_post.activity, emotion: @mood_post.emotion, img_url: @mood_post.img_url, journal: @mood_post.journal, mood: @mood_post.mood, user_id: @mood_post.user_id } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class MoodPostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update mood_post" do
-    patch mood_post_url(@mood_post), params: { mood_post: { emotion: @mood_post.emotion, img_url: @mood_post.img_url, journal: @mood_post.journal, mood: @mood_post.mood, user_id: @mood_post.user_id } }, as: :json
+    patch mood_post_url(@mood_post), params: { mood_post: { activity: @mood_post.activity, emotion: @mood_post.emotion, img_url: @mood_post.img_url, journal: @mood_post.journal, mood: @mood_post.mood, user_id: @mood_post.user_id } }, as: :json
     assert_response 200
   end
 
